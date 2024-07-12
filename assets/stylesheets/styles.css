@@ -3446,11 +3446,3 @@ button.btn-get-started:hover {
   color: #000000;
 }
 
-
-/*MANUAL*/
-
-.main_buttons{
-  display: flex;
-  gap: 20px;
-}
-
