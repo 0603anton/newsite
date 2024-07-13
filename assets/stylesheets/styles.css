@@ -519,6 +519,8 @@ section {
     margin-left: 5px;
   }
 
+  /*ТУТ только цветом выделение, без фона*/
+
   .navbar>ul>li:before {
     content: "";
     position: absolute;
@@ -546,6 +548,8 @@ section {
   .navbar li:hover a {
     color: #ffffff;
   }
+
+  /*ЗДЕСЬ ФОН ДРОПДАУНА*/
 
   .navbar .dropdown ul {
     display: block;
