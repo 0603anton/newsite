@@ -421,12 +421,12 @@ section {
 .header.stikcy-menu {
   background: #2b2b2b;
 }
-
+/*ЛОГОТИП*/
 .header .logo img {
-  max-height: 36px;
-  min-height: 50px;
-  margin-right: 10px;
-  background: url('../images/temp/logo_1.svg');
+  max-height: 90px;
+  /*min-height: 50px;*/
+  /*margin-right: 10px;*/
+  background: url('../images/temp/untitled.svg');
   /*border-radius: 0 17px;*/
   /*padding: 8px;*/
 }
@@ -519,7 +519,7 @@ section {
     margin-left: 5px;
   }
 
-  /*ТУТ только цветом выделение, без фона*/
+  /*ТУТ только цветом выделение, без фона ФОН*/
 
   .navbar>ul>li:before {
     content: "";
@@ -1739,10 +1739,10 @@ section {
     font-size: 14px;
   }
 }
-
+/*Скругление портфолио*/
 .portfolio .portfolio-wrap {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 0 17px;
+  /*border-radius: 0 17px;*/
   height: 100%;
   overflow: hidden;
   transition: 0.3s;
@@ -2184,7 +2184,7 @@ button:focus:not(:focus-visible){
 .hero .circle {
   font-weight: 100;
   position: absolute;
-  top: -60px;
+  top: -65px;
   right: 0;
   color: #d7570c;
   font-size: 4rem;
@@ -2287,6 +2287,8 @@ button:focus:not(:focus-visible){
   font-weight: 400;
   margin-bottom: 30px;
 }
+
+/*Скругление кнопки*/
 
 .btn-get-started {
   letter-spacing: 1px;

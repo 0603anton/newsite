@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<svg width="1346.7" height="1064.47" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" version="1.1" xml:space="preserve">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#C1B4AB;stroke-width:9.82;stroke-miterlimit:22.9256}
+    .str2 {stroke:#C1B4AB;stroke-width:9.82;stroke-miterlimit:22.9256}
+    .str3 {stroke:#C1B4AB;stroke-width:39.3;stroke-miterlimit:22.9256}
+    .str4 {stroke:#C1B4AB;stroke-width:39.3;stroke-miterlimit:22.9256}
+    .str5 {stroke:#373435;stroke-width:2.5;stroke-miterlimit:22.9256}
+    .str0 {stroke:#C1B4AB;stroke-width:9.82;stroke-miterlimit:22.9256;stroke-dasharray:19.648475 9.824238}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="Слой_x0020_1">
+   <metadata fill="#000000" id="CorelCorpID_0Corel-Layer"/>
+   <path class="fil0 str0" d="m889.2,667.22c-100.89,-8.81 -144.07,46.91 -144.81,121.49" fill="#000000" id="svg_1"/>
+   <line class="fil0 str1" fill="#000000" id="svg_2" x1="409.46" x2="409.46" y1="404.27" y2="273.89"/>
+   <line class="fil0 str2" fill="#000000" id="svg_3" x1="747.91" x2="370" y1="785.63" y2="785.63"/>
+   <line class="fil0 str1" fill="#000000" id="svg_4" x1="408.17" x2="408.17" y1="570.63" y2="822.1"/>
+   <path class="fil0 str2" d="m878.45,649.06c0,45.81 0,91.61 0,137.42c33.31,0 84.47,0 117.77,0" fill="#000000" id="svg_5"/>
+   <path class="fil0 str3" d="m370,323.68c191.2,0 382.41,0 573.61,0c0,26.86 0,53.73 0,80.59" fill="#000000" id="svg_6"/>
+   <path class="fil0 str4" d="m943.61,570.62c0,83.82 0,167.65 0,251.47" fill="#000000" id="svg_7"/>
+   <line class="fil0 str1" fill="#000000" id="svg_8" x1="621.7" x2="621.7" y1="341.04" y2="639.43"/>
+   <line class="fil0 str2" fill="#000000" id="svg_9" x1="717.92" x2="408.17" y1="635.05" y2="635.05"/>
+  </g>
+ </g>
+</svg>
