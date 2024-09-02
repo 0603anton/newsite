@@ -316,3 +316,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/**
+ * раскрыть отзыв
+ */
+
+function toggleReview(id, element) {
+  var content = document.getElementById(id);
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    element.textContent = 'Читать дальше';
+  } else {
+    content.classList.add('expanded');
+    element.textContent = 'Скрыть';
+  }
+}

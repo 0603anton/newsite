@@ -624,6 +624,9 @@ section {
   }
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
@@ -787,6 +790,27 @@ section {
     display: none;
   }
 }
+
+
+/*MODAL отзывыв полный текст*/
+
+.review-content {
+  overflow: hidden;
+  max-height: 80px; /* Высота, до которой текст будет виден */
+  transition: max-height 0.3s ease;
+}
+
+.review-content.expanded {
+  max-height: none; /* Полностью раскрывает текст */
+}
+
+.read-more {
+  color: #9b9b9b;
+  cursor: pointer;
+  display: inline;
+
+}
+
 
 /*--------------------------------------------------------------
 # All Sections Title with icons
@@ -1487,6 +1511,7 @@ section {
   border-radius: 0 17px;
   transition: 0.5s;
   margin: 10px;
+  background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -3451,4 +3476,91 @@ button.btn-get-started:hover {
 .footer-menu li a:hover {
   color: #000000;
 }
+
+
+/*FORM*/
+
+/*.main-block {*/
+/*  background-color: var(--main-yellow);*/
+/*  margin-bottom: 60px;*/
+/*  padding-bottom: 50px;*/
+/*}*/
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 50vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fname, .email, .phone, .promocode, .city, .city:disabled {
+  min-width: 30vw;
+  /*background-color: var(--main-yellow);*/
+  border: none;
+  border-bottom: 2px solid white;
+  color: gray;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.message {
+  min-width: 30vw;
+  /*background-color: var(--main-yellow);*/
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.text_city_color{
+  color: gray;
+}
+
+.form-heading {
+  margin: 35px 0;
+  color: white;
+}
+
+
+/*.soglasie {*/
+/*  text-decoration: underline;*/
+/*  !*color: var(--main-dark);*!*/
+/*}*/
+
+/*.checkbox_form {*/
+/*  margin-top: 10px;*/
+/*}*/
+
+select.city {
+  /*background-color: var(--main-yellow);*/
+  border: none;
+  border-bottom: 2px solid white;
+  color: gray;
+  margin-bottom: 25px;
+  min-width: 30vw;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  select.city {
+    min-width: 55vw;
+  }
+  .fname, .email, .phone, .promocode, .city, .city:disabled {
+    min-width: 55vw;
+  }
+
+  .message {
+    min-width: 55vw;
+  }
+}
+
+
 

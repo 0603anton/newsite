@@ -1,7 +1,7 @@
 <?php
     //this is your Email address
     //kinldy update your email here
-    $to = "info@example.com"; 
+    $to = "impresds@gmail.com";
     $from = $_POST['email']; 
     //this is the sender's Email address
     //this is firt name
@@ -11,7 +11,7 @@
     //this is subject
     $subject = "Form Subject Here: ";
     //this is message body
-    $message = "Message " . $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = "Message " . $first_name . " " . $last_name . " написал следующее:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from . "\r\n" .
         'Reply-To: webmaster@example.com' . "\r\n" .
