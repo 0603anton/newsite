@@ -348,18 +348,31 @@
     </div>
 </section><!-- End Portfolio Section -->
 
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+    <!-- Контент модального окна -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text">Здесь будет отображаться текст отзыва.</p>
+    </div>
+</div>
+<!-- End Modal -->
+
+
 <!-- Testimonials Section -->
 <section id="testimonials" class="testimonials">
     <div class="container" data-aos="fade-up">
+
         <div class="section-header text-center">
-            <h2>Reviews | People Love Our Project's</h2>
-            <p>Hear What Our Satisfied Clients Say About Our Interior Design Services. Experience Exceptional Service
-                and Successful Outcomes.</p>
+            <h2>Отзывы | Люди любят наши проекты.</h2>
+            <p>Узнайте, что говорят наши довольные клиенты о наших услугах по дизайну интерьера. Оцените исключительный
+                сервис и успешные результаты.</p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
-
+                <!--отзыв длинный-->
                 <div class="swiper-slide">
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
@@ -368,8 +381,8 @@
                                      class="testimonial-img flex-shrink-0"
                                      alt="">
                                 <div>
-                                    <h3>????КТО</h3>
-                                    <h4>Чем занимается</h4>
+                                    <h3>Семейная пара</h3>
+                                    <h4>Загородный дом в г. Севастополь 300 м<sup>2</sup></h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i
@@ -378,36 +391,33 @@
                                 </div>
                             </div>
                             <p>
-
-                            <p class="review-content" id="review-content-1">
                                 <i class="bi bi-quote quote-icon-left"></i>
-                                Заказали дизайн дома. От нас был не простой запрос. Во-первых, объект удален был и от нас
-                                и от дизайнеров. Во вторых задача... была поставлена не совсем однозначная. В общем хочу
-                                сказать спасибо большое. Все сделали очень грамотно и учли все наши пожелания. Спокойно
-                                и корректно выслушивали и меняли все наши хотелочки. Очень приятно было работать со
-                                Светланой. Всегда шла нам на встречу. Обязательно буду рекомендовать только ее.
-                                Удачи в работе и дальнейшего процветания.
+                                Заказали дизайн дома. От нас был не простой запрос. Во-первых, объект удален был и от
+                                нас и от дизайнеров. Во-первых, объект удален был и ...
 
-                            </p>
-                            <span class="read-more"
-                                  onclick="toggleReview('review-content-1', this)">Читать полный отзыв</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
+                                <button class="openModalBtn button-as-text" data-content="
+                                Заказали дизайн дома. От нас был не простой запрос. Во первых объект удален был и от нас и от дизайнеров. Во вторых задача была поставлена не совсем однозначная. В общем хочу сказать спасибо большое. Все сделали очень грамотно и учли все наши пожелания. Спокойно и корректно выслушивали и меняли все наши хотелочки. Очень приятно было работать со Светланой. Всегда шла нам на встречу. Обязательно буду рекомендовать только ее.
+Удачи в работе и дальнейшего процветания.">
+                                    Читать полный отзыв... ⮕
+                                </button>
 
+                                <i class="bi bi-quote quote-icon-right"></i>
                             </p>
+
                         </div>
                     </div>
                 </div><!-- End testimonial item -->
-
+                <!--Отзыв короткий-->
                 <div class="swiper-slide">
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center info-box">
-                                <img src="assets/images/testimonials/testimonial-2.jpg"
+                                <img src="assets/images/testimonials/logo_coffe_cup.jpg"
                                      class="testimonial-img flex-shrink-0"
                                      alt="">
                                 <div>
-                                    <h3>Afa Rose</h3>
-                                    <h4>Web Designer</h4>
+                                    <h3>«Coffee cup to go»</h3>
+                                    <h4>Общественное помещение 40 м<sup>2</sup></h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i
@@ -417,25 +427,134 @@
                             </div>
                             <p>
                                 <i class="bi bi-quote quote-icon-left"></i>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis
-                                quorum velit fore eram velit sunt aliqua.
+
+                                Порадовал подход к делу и системность в работе. Предложенное решение было утверждено с
+                                первого
+                                раза. Было приятно работать с дизайн студией Impression Design
+
+
+                                <!--                                <button class="openModalBtn button-as-text" data-content="-->
+                                <!--                                Заказали дизайн дома. От нас был не простой запрос. Во первых объект удален был и от нас и от дизайнеров. Во вторых задача была поставлена не совсем однозначная. В общем хочу сказать спасибо большое. Все сделали очень грамотно и учли все наши пожелания. Спокойно и корректно выслушивали и меняли все наши хотелочки. Очень приятно было работать со Светланой. Всегда шла нам на встречу. Обязательно буду рекомендовать только ее.-->
+                                <!--Удачи в работе и дальнейшего процветания.">-->
+                                <!--                                    Читать полный отзыв... ⮕</button>-->
+
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <!--отзыв длинный-->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="assets/images/testimonials/main_orange.png"
+                                     class="testimonial-img flex-shrink-0"
+                                     alt="">
+                                <div>
+                                    <h3>Алексей Х.</h3>
+                                    <h4>Просторная квартира в г. Балашиха 100 м<sup>2</sup></h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Расскажу о своем проекте в г. Балашиха, живу пока, что один в 3‑комнатной квартире,
+                                по выходным приезжает сын. С Ангелиной ...
+
+                                <button class="openModalBtn button-as-text" data-content="
+                                Расскажу о своем проекте в г. Балашиха, живу пока, что один в 3-х комнатной квартире, по выходным приезжает сын. С Ангелиной познакомился случайно, долго искал с кем делать свой проект и мой выбор стал очевиден, Светлана. Так как это мой второй проект и опыт уже имеется, мне все равно было очень сложно во все вникнуть, но Ангелина удаленно по телефону может объяснить так, что я все прекрасно понимал. В общем чувствуется, что человек красноречивый, что профессионал своего дела. Еще я очень приятно удивился как Ангелина может чувствовать настроение и настрой заказчика. Я очень доволен результатом, рекомендую. Ангелина, всегда практически доступна, это удивительный человек, который расскажет если, что-то не понятно, сделает все очень красиво, качественно и стильно. Большое спасибо за проделанную работу Вам Ангелина и Вашей команде.">
+                                    Читать полный отзыв... ⮕
+                                </button>
+
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <!--отзыв длинный-->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="assets/images/testimonials/main_orange.png"
+                                     class="testimonial-img flex-shrink-0"
+                                     alt="">
+                                <div>
+                                    <h3>— Татьяна И.</h3>
+                                    <h4>Просторная квартира в г. Новокузнецк 100 м<sup>2</sup></h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Хочу начать отзыв с того, что со Светланой мы знакомы уже
+                                около 10 лет, причём сотрудничаем очень плотно 6 лет. Все началось с идеи нашего ...
+
+                                <button class="openModalBtn button-as-text" data-content="
+                            Хочу начать отзыв с того, что со Светланой мы знакомы уже около 10 лет, причём сотрудничаем очень плотно 6 лет. Все началось с идеи нашего руководства сделать ремонт в офисе, площадь небольшая, все обшарпанное, а задача стояла, как всегда, выполнить недорого, но чтобы глаз горел. Светлана услышала наши мольбы, и в кратчайшие сроки был выполнен не только эскиз, но и подобрана высококвалифицированная ремонтная бригада, которая все задумки осуществила (сегодня ремонту уже 5 лет, состояние превосходное, мебель вся функционирует, шкафы открываются, отделка стен на месте (использовали сухую смесь - флоки!), просто протираем и все!!! Через год наш офис стал расширяться, и 300 кв метров старого Сто, с дырками в стенах, отсутствием пола, дверей, стен нужно было также переделать в функциональный офис с 6 кабинетами, переговорной, столовой, санузлом и местом для ожидания!!!! Светлана справилась, наши ожидания даже превзошли!!! С великим удовольствием ходим на работу!! И кто бы не приходил к нам в первый раз-все в восхищении!!! Стиль Лофт удался!!! Хотя присутствуют и нежные элементы - хрустальные люстры, роспись на стенах, потолок из профнастила... Казалось бы, несочетаемое!!! Но очень даже!!! И когда встал вопрос о внутренней отделке загородного дома, то я не думала!!! И тут со Светланой мы сделали, можно сказать, невозможное!!! Превратили простой дом и баню в уютный загородный дом и баню!!!!! Я даже представить не могла, как можно сочетать 5 оттенков зелёного в одной комнате. Но все получилось! На очереди - квартира!!!! И если резюмировать: - необычный подход - сжатые сроки - скурпулезность - сочетаемое с несочетаемым - дикий профессионализм - отношение, как для себя!!!! Совет - нужно доверять профессионалам, им виднее!!!! А Светлана таковым является!!!">
+                                    Читать полный отзыв... ⮕
+                                </button>
+
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <!--Отзыв короткий-->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="assets/images/testimonials/irina.webp"
+                                     class="testimonial-img flex-shrink-0"
+                                     alt="">
+                                <div>
+                                    <h3>Ирина</h3>
+                                    <h4>Квартира г. Новокузнецк 100 м<sup>2</sup></h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Это был наш первый опыт работы с дизайнером, и что понравилось, было все дипломатично,
+                                по делу, профессионально. Результат нам очень понравился. Впереди реализация квартиры
+                                мечты, компании желаем удачи и процветания!
+                                <!--                                <button class="openModalBtn button-as-text"-->
+                                <!--                                        data-content="Это отзыв клиента номер 1. Этот дизайнер сделал просто потрясающий проект для нашего нового офиса. Мы не ожидали, что пространство может выглядеть так уютно и функционально одновременно. Он учел все наши пожелания и превзошел ожидания! Мы очень довольны результатом и будем рекомендовать его всем знакомым, кто задумывается о ремонте или редизайне.">-->
+                                <!--                                    Читать отзыв 1-->
+                                <!--                                </button>-->
                                 <i class="bi bi-quote quote-icon-right"></i>
                             </p>
                         </div>
                     </div>
                 </div><!-- End testimonial item -->
-
+                <!--отзыв длинный-->
                 <div class="swiper-slide">
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center info-box">
-                                <img src="assets/images/testimonials/testimonial-3.jpg"
+                                <img src="assets/images/testimonials/nataly.webp"
                                      class="testimonial-img flex-shrink-0"
                                      alt="">
                                 <div>
-                                    <h3>Keena Lara</h3>
-                                    <h4>Store Owner</h4>
+                                    <h3>Наталья Вялушкина</h3>
+                                    <h4>Уютная квартира г. Новокузнецк 80 м<sup>2</sup></h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i
@@ -445,25 +564,28 @@
                             </div>
                             <p>
                                 <i class="bi bi-quote quote-icon-left"></i>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                duis minim
-                                tempor labore quem eram duis noster aute amet.
+                                Мой отзыв начнётся не с моей квартиры пришла я к клиентке на разбор гардероба (я
+                                стилист) и попала в произведение искусства...
+                                <button class="openModalBtn button-as-text"
+                                        data-content="Мой отзыв начнётся не с моей квартиры пришла я к клиентке на разбор гардероба (я стилист) и попала в произведение искусства. Обычно я по квартире не хожу, но тут попросила рум тур. Как же тонко Светлана совместила в квартире восток и европу, я была в приятном шоке и восхищении от каждой детали и комнат в целом. А самое главное, что я увидела, что пространство квартиры совпадает с ценностями, характером и душой хозяйки. И я захотела также. И вот Светлана пришла ко мне. Было много, но, какие-то предметы интерьера необходимо было оставить, а главное, как то вписать. Света задавала много вопросов, но я хотела просто доверять. Как доверяют мне и получается роскошь, я хотела тоже шедевра. Поэтому сказала, я доверяю, твори и рассказывай. Но есть еще и бюджет. А ещё возможный переезд. И я хочу все предметы интерьера туда забрать и чтобы они тоже вписались в другое пространство гармонично. В общем Света превзошла все ожидания. Что-то было с алишки, что-то местное, некоторые предметы были под заказ с Москвы. Но главное, все это сочеталось со мной и моей семьёй. В общем можно целую книгу написать, как я в восторге. Это лучший дизайнер из всех чьи работы я видела. А главное, что индивидуальный подход. А все мы разные и бюджет у нас тоже отличается. Светлана, благодарю тебя. Я в восторге и моя семья тоже. Ждём ещё некоторые предметы интерьера. До скорых встреч. Кто ещё ищет дизайнера, вы его нашли. Это Светлана. И еще, у вас всё получится, если вы будете доверять.">
+                                    Читать полный отзыв... ⮕
+                                </button>
                                 <i class="bi bi-quote quote-icon-right"></i>
                             </p>
                         </div>
                     </div>
                 </div><!-- End testimonial item -->
-
+                <!--отзыв длинный-->
                 <div class="swiper-slide">
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center info-box">
-                                <img src="assets/images/testimonials/testimonial-4.jpg"
+                                <img src="assets/images/testimonials/main_orange.png"
                                      class="testimonial-img flex-shrink-0"
                                      alt="">
                                 <div>
-                                    <h3>Fizzi Brandon</h3>
-                                    <h4>Freelancer</h4>
+                                    <h3>Мария А.</h3>
+                                    <h4>3-комнатная квартира в г. Новокузнецк 80 м<sup>2</sup></h4>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i
@@ -473,9 +595,77 @@
                             </div>
                             <p>
                                 <i class="bi bi-quote quote-icon-left"></i>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                                minim velit
-                                minim dolor enim duis veniam ipsum anim magna sunt.
+                                Хочу от всего сердца поблагодарить Ангелину за высокий профессионализм, начиная от
+                                консультации и заканчивая превосходным проектом ...
+
+                                <button class="openModalBtn button-as-text" data-content="
+                               Хочу от всего сердца поблагодарить Ангелину за высокий профессионализм, начиная от консультации и заканчивая превосходным проектом дачного дома! Подбор материалов в великолепном соотношении цена/качество!!! Материалы доступные по цене, а результат выше всяких похвал в жизни намного лучше, чем на проекте!!! В этой организации изучат все ваши предпочтения и выдадут по истине великолепный результат!!! Я крайне притязательный клиент, но проект меня поразил и превзошел любые мои ожидания Браво Impression Design">
+                                    Читать полный отзыв... ⮕
+                                </button>
+
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <!--отзыв длинный-->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="assets/images/testimonials/main_orange.png"
+                                     class="testimonial-img flex-shrink-0"
+                                     alt="">
+                                <div>
+                                    <h3>Селюк Алена</h3>
+                                    <h4>3-комнатная квартира в г. Новокузнецк 80 м<sup>2</sup></h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Всегда приятно встречать на своём профессиональном пути коллег, сотрудничество с
+                                которыми приносит не только позитивные эмоции,но и ...
+
+                                <button class="openModalBtn button-as-text" data-content="
+                                Всегда приятно встречать на своём профессиональном пути коллег, сотрудничество с которыми приносит не только позитивные эмоции,но и творческие, креативные решения, которые в будущем создают уют и радуют глаз. Интерьеры Ангелины всегда интересные, функциональные.С первого взгляда видна смелая и профессиональная работа с цветом, что в нынешнее время облегчённых и светлых решений в большинстве своём уже становится редкостью.Внимательное отношение к мелочам и большое желание творить, создают особую атмосферу комфорта и конечный результат, выполненный на все 100%.Очень надеюсь на дальнейшее сотрудничество и дружбу. С большим уважением и симпатией, дизайнер салона текстильного оформления 'Анкара'">
+                                    Читать полный отзыв... ⮕
+                                </button>
+
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <!--                ссылка на Hauzze-->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="assets/images/testimonials/main_orange.png"
+                                     class="testimonial-img flex-shrink-0"
+                                     alt="">
+                                <div>
+                                    <h3></h3>
+                                    <h4></h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/impression-pfvwru-pf~154145655">Больше
+                                    отзывов на Hauzze ⮕</a>
+
                                 <i class="bi bi-quote quote-icon-right"></i>
                             </p>
                         </div>
@@ -625,30 +815,23 @@
         </div>
         <div class="row gy-4">
             <div class="col-lg-6">
-                <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                <div class="accordion accordion-flush" data-aos="fade-up" data-aos-delay="100">
                     <div class="accordion-item">
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-content-1">
+                                    data-bs-target="#faq-content-5">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                What are the steps involved in the interior design process?
+                                Почему стоит выбрать дизайн-студию в Калининграде или Новокузнецке для создания
+                                дизайн-проекта квартиры?
                             </button>
                         </h3>
-                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Выбор дизайн-студии в Калининграде или Новокузнецке гарантирует вам индивидуальный
+                                подход и качественное выполнение дизайн-проекта квартиры. Местные дизайнеры глубоко
+                                понимают архитектурные особенности городов и предпочтения жителей, что позволяет
+                                создавать проекты, идеально вписывающиеся в городской ландшафт и соответствующие вашим
+                                требованиям.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -656,26 +839,17 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-content-2">
+                                    data-bs-target="#faq-content-6">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                How do I choose the right color scheme for my space?
+                                Как выбрать лучшего дизайнера интерьера в Калининграде или Новокузнецке?
                             </button>
                         </h3>
-                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Чтобы выбрать лучшего дизайнера интерьера в Калининграде или Новокузнецке, обращайте
+                                внимание на портфолио выполненных проектов, отзывы клиентов и специализацию дизайнера.
+                                Опытные дизайнеры интерьера Калининграда и Новокузнецка могут предложить уникальные
+                                решения для создания современного и функционального пространства.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -683,26 +857,19 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-content-3">
+                                    data-bs-target="#faq-content-7">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                What factors should I consider when selecting furniture for my home?
+                                В чем заключается процесс создания дизайн-проекта квартиры в Калининграде и
+                                Новокузнецке?
                             </button>
                         </h3>
-                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Процесс создания дизайн-проекта квартиры в Калининграде и Новокузнецке включает
+                                несколько этапов: обсуждение требований заказчика, разработка концепции,
+                                3D-визуализация, подбор материалов и мебели, а также контроль выполнения проекта. Каждая
+                                стадия направлена на создание гармоничного и современного интерьера, который будет
+                                отвечать всем вашим ожиданиям.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -710,26 +877,17 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-content-4">
+                                    data-bs-target="#faq-content-8">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                How can I maximize storage in a small living space?
+                                Какие стили интерьера сейчас популярны для квартир в Калининграде и Новокузнецке?
                             </button>
                         </h3>
-                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Для квартир в Калининграде и Новокузнецке популярны современные стили, такие как
+                                минимализм, скандинавский стиль, лофт и современная классика. Дизайн квартир в этих
+                                стилях акцентирует внимание на функциональность, светлые цвета, использование
+                                натуральных материалов и интеграцию современных технологий.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -742,24 +900,16 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq-content-5">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                What are the latest trends in kitchen design?
+                                Что включает в себя дизайн квартиры или дома 2023-2024 годов?
                             </button>
                         </h3>
-                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Дизайн квартиры или дома 2023-2024 годов в Калининграде и Новокузнецке ориентирован на
+                                экологичность, минимализм, и функциональность. Внутренний дизайн дома включает
+                                использование натуральных материалов, современных технологий и эргономичных решений.
+                                Кроме того, внимание уделяется дизайну зон ТВ и кухонного пространства для создания
+                                комфортного и стильного интерьера.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -769,24 +919,16 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq-content-6">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                How can I create a cohesive interior design theme?
+                                Каковы особенности современного дизайна дома внутри в Калининграде и Новокузнецке?
                             </button>
                         </h3>
-                        <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Современный дизайн дома внутри в Калининграде и Новокузнецке отличается чистыми линиями,
+                                открытыми пространствами и минимальным декором. Важную роль играют встроенные системы
+                                хранения, многоуровневое освещение и использование современных материалов, таких как
+                                стекло, металл и дерево. Такой дизайн способствует созданию уютной и функциональной
+                                атмосферы.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -796,24 +938,16 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq-content-7">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                What are the benefits of hiring an interior designer?
+                                !!! - ПОПРАВИТЬ Можно ли заказать дизайн-проект квартиры в Калининграде или Новокузнецке
+                                удаленно?
                             </button>
                         </h3>
-                        <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Да, многие дизайн-студии Калининграда и Новокузнецка предлагают услуги по созданию
+                                дизайн-проекта квартиры удаленно. Это позволяет вам получать качественные услуги, не
+                                зависимо от вашего местоположения. Дизайнеры могут проводить консультации онлайн,
+                                предоставлять 3D-визуализации и работать с подрядчиками напрямую.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
@@ -823,29 +957,177 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq-content-8">
                                 <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                                How can I incorporate sustainable and eco-friendly elements?
+                                Каковы ориентировочные сроки и стоимость разработки дизайн-проекта квартиры в
+                                Калининграде или Новокузнецке?
                             </button>
                         </h3>
-                        <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem ipsum
-                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut
-                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis
-                                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                consequatur,
-                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                Сроки разработки дизайн-проекта квартиры в Калининграде или Новокузнецке зависят от
+                                объема работы и сложности проекта. В среднем, на это может уйти от 2 до 6 недель.
+                                Стоимость варьируется в зависимости от размера квартиры, выбранного стиля и материалов.
+                                Опытные дизайнеры интерьера Калининграда и Новокузнецка смогут предложить проект,
+                                соответствующий вашему бюджету, без ущерба качеству.
                             </div>
                         </div>
                     </div><!-- # Faq item-->
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-1">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Какие этапы включает в себя процесс создания интерьера?
+                            </button>
+                        </h3>
+                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Процесс создания интерьера состоит из нескольких ключевых этапов: анализ потребностей
+                                клиента, разработка концепции дизайна, создание чертежей и планов, выбор материалов и
+                                мебели, создание 3D-визуализаций, а также контроль выполнения всех работ на объекте.
+                                Каждый этап важен для достижения идеального результата и создания гармоничного
+                                пространства.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-2">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Как выбрать подходящую цветовую гамму для интерьера?
+                            </button>
+                        </h3>
+                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                При выборе цветовой гаммы для интерьера важно учитывать размер и освещенность помещения,
+                                функциональность пространства, а также личные предпочтения. Теплые оттенки создают уют,
+                                холодные добавляют свежести, а нейтральные цвета делают пространство универсальным.
+                                Опытный дизайнер интерьера поможет подобрать гармоничное сочетание цветов,
+                                соответствующее вашему стилю и задачам.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-3">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Какие факторы следует учитывать при выборе мебели для дома?
+                            </button>
+                        </h3>
+                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                При выборе мебели для дома важно учитывать размер помещения, его функциональность, стиль
+                                интерьера и качество материалов. Мебель должна быть удобной, долговечной и
+                                соответствовать общей концепции дизайна. Также важно учитывать цветовую гамму и
+                                текстуры, чтобы создать гармоничный и целостный образ.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-4">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Как максимально использовать пространство для хранения в небольшой квартире?
+                            </button>
+                        </h3>
+                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Для максимального использования пространства для хранения в небольшой квартире можно
+                                использовать встроенные шкафы, многофункциональную мебель, такие как диваны с ящиками
+                                для хранения, а также использовать вертикальное пространство с помощью полок и
+                                стеллажей. Оптимизация каждого квадратного метра позволяет создать уютное и
+                                функциональное жилье.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion accordion-flush" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-5">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Каковы последние тенденции в дизайне кухонь?
+                            </button>
+                        </h3>
+                        <div id="faq-content-13" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Последние тенденции в дизайне кухонь включают использование натуральных материалов,
+                                минималистичные формы, встроенную технику, а также комбинирование открытых и закрытых
+                                систем хранения. Важно также уделять внимание экологичности и энергоэффективности при
+                                выборе материалов и техники.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-6">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Как создать гармоничную тему интерьера?
+                            </button>
+                        </h3>
+                        <div id="faq-content-14" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Создание гармоничной темы интерьера начинается с определения основного стиля и цветовой
+                                палитры. Все элементы декора, мебели и освещения должны поддерживать выбранную
+                                концепцию. Важно также учитывать пропорции и баланс в помещении, чтобы создать целостный
+                                и уютный образ.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-7">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Каковы преимущества найма дизайнера интерьера?
+                            </button>
+                        </h3>
+                        <div id="faq-content-15" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Найм дизайнера интерьера обеспечивает профессиональный подход к созданию комфортного и
+                                эстетически привлекательного пространства. Дизайнер поможет оптимизировать бюджет,
+                                предложит уникальные решения, учитывая ваши пожелания и особенности помещения, а также
+                                обеспечит контроль качества выполнения работ.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-8">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Как интегрировать устойчивые и экологичные элементы в дизайн интерьера?
+                            </button>
+                        </h3>
+                        <div id="faq-content-16" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Интеграция устойчивых и экологичных элементов в дизайн интерьера включает использование
+                                натуральных и переработанных материалов, энергоэффективных осветительных приборов и
+                                бытовой техники, а также внедрение систем для экономии воды и энергии. Такой подход не
+                                только уменьшает воздействие на окружающую среду, но и создает здоровую и комфортную
+                                среду обитания.
+                            </div>
+                        </div>
+                    </div><!-- # Faq item-->
+                </div>
+            </div>
+
         </div>
 
     </div>

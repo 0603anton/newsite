@@ -154,12 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
    * Clients Slider
    */
   new Swiper('.clients-slider', {
-    speed: 500,
-    loop: true,
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: false
-    },
+    speed: 1000,
+    loop: false,
+    // autoplay: {
+    //   delay: 7000,
+    //   disableOnInteraction: true
+    // },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -244,11 +244,11 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   new Swiper('.slides-1', {
     speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: true
+    // },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -266,11 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   new Swiper('.slides-3', {
     speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: true
+    // },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -317,17 +317,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-/**
- * раскрыть отзыв
- */
+// МОДАЛЬНоЕ
 
-function toggleReview(id, element) {
-  var content = document.getElementById(id);
-  if (content.classList.contains('expanded')) {
-    content.classList.remove('expanded');
-    element.textContent = 'Читать дальше';
-  } else {
-    content.classList.add('expanded');
-    element.textContent = 'Скрыть';
+// Получаем элементы
+var modal = document.getElementById("myModal");
+var modalText = document.getElementById("modal-text");
+var closeBtn = document.getElementsByClassName("close")[0];
+var openModalBtns = document.getElementsByClassName("openModalBtn");
+
+// Открыть модальное окно с нужным содержимым при нажатии на кнопку
+for (var i = 0; i < openModalBtns.length; i++) {
+  openModalBtns[i].onclick = function() {
+    var content = this.getAttribute("data-content");
+    modalText.textContent = content;
+    modal.style.display = "block";
+  }
+}
+
+// Закрыть модальное окно при нажатии на крестик
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Закрыть модальное окно при нажатии в любом месте за его пределами
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }

@@ -624,9 +624,6 @@ section {
   }
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
@@ -790,27 +787,6 @@ section {
     display: none;
   }
 }
-
-
-/*MODAL отзывыв полный текст*/
-
-.review-content {
-  overflow: hidden;
-  max-height: 80px; /* Высота, до которой текст будет виден */
-  transition: max-height 0.3s ease;
-}
-
-.review-content.expanded {
-  max-height: none; /* Полностью раскрывает текст */
-}
-
-.read-more {
-  color: #9b9b9b;
-  cursor: pointer;
-  display: inline;
-
-}
-
 
 /*--------------------------------------------------------------
 # All Sections Title with icons
@@ -3562,5 +3538,64 @@ select.city {
   }
 }
 
+/* Модальное окно для отзыва */
+/* Стили для затемнения фона */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+}
 
+/* Стили для модального контента */
+.modal-content {
+  background-color: #2b2b2b;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
 
+/* Стили для кнопки закрытия */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #9b9b9b;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для кнопки, чтобы она выглядела как текст */
+.button-as-text {
+  background: none;
+  border: none;
+  color: #9b9b9b; /* Цвет текста */
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  /*text-decoration: underline; !* Добавить подчеркивание *!*/
+  display: inline;
+}
+
+.button-as-text:hover {
+  color: #8f8e8e; /* Цвет при наведении */
+  text-decoration: none; /* Убрать подчеркивание при наведении */
+}
