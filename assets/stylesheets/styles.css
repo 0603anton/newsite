@@ -2244,8 +2244,9 @@ button:focus:not(:focus-visible){
     display: block;
     transition: all 0.5s ease-in-out 0s;
     background: linear-gradient(0deg, #262626, #2d2d2d 786px);
-    opacity: 0.8;
+    opacity: 0.5;
 }
+/*Прозрачность главного экрана*/
 .video-overlay {
     position: absolute;
     left: 0;
