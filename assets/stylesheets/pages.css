@@ -9,6 +9,9 @@
 /*--------------------------------------------------------------
 # Single Page
 --------------------------------------------------------------*/
+
+
+
 .page-hero{
   background: url(../images/cta-bg.jpg) center center;
   background-color: #d7570c;
@@ -886,7 +889,7 @@
 
 .single-page ul li {
   position: relative;
-  color: #d7570c;
+  color:var(--color-3rd);
   margin-bottom: 5px;
   display: flex;
   gap: 10px;
