@@ -46,7 +46,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #dddddd; 
+  background: #dddddd;
   width: 15px;
 }
 
@@ -129,9 +129,10 @@ section {
 .bg-grey{
   background: #2b2b2b;
 }
-
+/*ФОН партнеров и заявки заявка фон пратнеры фон*/
 .sections-bg{
-  background: url('../images/section-bg.jpg');
+  /*background: var(--color-primary);*/
+  background: #2b2b2b;
   border-radius: 0px;
   overflow: hidden;
   background-repeat: repeat;
@@ -167,7 +168,7 @@ section {
 .section-header h2 {
   font-size: 2rem;
   position: relative;
-  color: var(--color-primary);
+  color: var(--color-3rd);
 }
 .section-header hr {
   content: '';
@@ -434,15 +435,15 @@ section {
 /*ЛОГОТИП*/
 .header .logo img {
   max-height: 90px;
-  /*min-height: 50px;*/
-  /*margin-right: 10px;*/
+  min-height: 50px;
+  margin: 10px 5px 0 0;
   background: url('../images/temp/untitled.svg');
-  /*border-radius: 0 17px;*/
-  /*padding: 8px;*/
+  border-radius: 0 17px;
+  padding: 8px;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -1331,7 +1332,7 @@ section {
 # Watch Video Header
 --------------------------------------------------------------*/
 .watch-video {
-    background: url(../images/section-bg.jpg);
+    background: url(../images/section-bg_compressed.jpg);
     background-size: cover;
     border-radius: 0px;
     padding: 200px 0;
@@ -1510,8 +1511,8 @@ section {
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  background: var(--color-3rd);
+  border: 2px solid var(--color-3rd);
 }
 
 @keyframes pulsate-btn {
@@ -1666,7 +1667,7 @@ section {
   margin-top: 16px;
   margin-bottom: 2px;
   font-size: 20px;
-  color: #d7570c;
+  color: var(--color-3rd);
 }
 
 .team .member span {
@@ -1741,7 +1742,7 @@ section {
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
+  color: var(--color-3rd);
 }
 
 .portfolio .portfolio-flters li:first-child {
@@ -2065,7 +2066,7 @@ button:focus:not(:focus-visible){
   padding-right: 10px;
   font-size: 30px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-3rd);
 }
 
 .faq .accordion-button:not(.collapsed) {
@@ -2577,15 +2578,18 @@ color: var(--color-3rd);
 /* -------------------------------------------------------------- 
  * Counter Section Style
  -------------------------------------------------------------- */
+
+/*ПРозрачный фон, фон секций*/
 .counter-area{
-    background: url('../images/section-bg.jpg');
+    background: url('../images/section-bg_compressed1.jpg');
     background-size: cover;
     border-radius: 0px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: #fff;
+    /*color: #fff;*/
+    color: var(--color-primary);
     position: relative;
 }
 .counter-area::before {
@@ -2600,7 +2604,8 @@ color: var(--color-3rd);
     background: #000000;
 }
 .counter-area ul li{
-  color: #ffffff !important;
+  /*color: #ffffff !important;*/
+color: var(--color-primary) !important;
 }
 .counter-container {
   display: flex;
@@ -2633,6 +2638,7 @@ color: var(--color-3rd);
   line-height: 100px;
   margin-top: 10px;
   font-weight: 900;
+    color: var(--color-3rd);
 }
 .counter-area span {
   margin-top: 0px;
@@ -3294,7 +3300,7 @@ button.btn-get-started:hover {
   color: #ffffff;
 }
 
-.footer-section .contact-info h6, 
+.footer-section .contact-info h6,
 .footer-section .contact-info p{
   margin-bottom: 0;
 }
@@ -3373,7 +3379,7 @@ button.btn-get-started:hover {
 
 .footer-social-icon a {
   color: #fff;
-  font-size: 16px;
+  font-size: 30px;
   margin-right: 15px;
 }
 
@@ -3463,7 +3469,7 @@ button.btn-get-started:hover {
 }
 
 .copyright-area {
-  background: var(--color-primary);
+  background: var(--color-3rd);
   padding: 25px 0;
 }
 
@@ -3703,9 +3709,9 @@ select.city {
 
 /*Таблица цен*/
 .pricing-table {
-  background-color: #4f4e49;
+  background-color:transparent;
   border-radius: 10px;
-  padding: 20px;
+  /*padding: 20px;*/
   /*width: 90%;*/
   /*max-width: 800px;*/
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
@@ -3722,43 +3728,65 @@ select.city {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 
 }
 
 .header_price {
-  background-color: #6c6659;
+  background-color: var(--color-3rd);
   padding: 10px;
+  color: white;
   font-weight: bold;
   text-align: center;
+  font-size: large;
+  border-radius: 10px;
 }
 
 .row-title {
-  background-color: #878573;
+  background-color: var(--color-3rd);
+  color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pricing-grid .notincl{
+  color: var(--color-3rd);
+  background-color: transparent;
+}
+
+.bigatt{
+  font-weight: bold;
+  font-size: large;
 }
 
 .check, .price {
   text-align: center;
   padding: 10px;
   background-color: transparent;
+
 }
 
 .check {
+  /*background-color: rgba(154, 129, 98, 0.3);*/
+  background-color: #2b2b2b;
   font-size: 18px;
+  color: var(--color-primary);
+  border-radius: 10px;
 }
 
 .price {
   font-weight: bold;
-  color: #bfbdb3;
+  font-size: large;
+  color: var(--color-3rd);
 }
 
 .price:nth-child(3n+1) {
-  color: #bfbdb3;
+  color: var(--color-3rd);
 }
 
 
@@ -3768,4 +3796,28 @@ select.city {
 
 .steps_main_heading {
   color: var(--color-3rd);
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 0.8fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    /*line-height: 12px;*/
+  }
+  .bigatt{
+    font-weight: normal;
+    font-size: medium;
+  }
+
+  .price {
+    font-weight: normal;
+    font-size: medium;
+    color: var(--color-3rd);
+  }
+  .nowraptext{
+    white-space: nowrap;
+  }
 }

@@ -33,7 +33,7 @@ async function sendEmailTelegram(event) {
         });
 
         if (response.ok) {
-            formSendResult.style.cssText = 'color: white; border: 1px solid white; font-weight: 500;font-size: 35px; background-color: #d7570c'
+            formSendResult.style.cssText = 'color: white; border: 1px solid white; font-weight: 500;font-size: 35px; background-color: #9a8162'
             formSendResult.textContent = `Спасибо! Мы свяжемся с вами в ближайшее время.`
             form.reset()
         } else {
