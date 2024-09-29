@@ -1789,7 +1789,8 @@ section {
 .portfolio .portfolio-wrap .portfolio-info {
   /*background-color: rgb(215 87 12 / 85%);*/
   /*background-color: rgb(154 129 98 / 85%);*/
-  background-color: rgb(89 65 63 / 85%);
+  /*background-color: rgb(89 65 63 / 85%);*/
+  background-color: rgb(43 43 43 / 85%);
   position: absolute;
   z-index: 2;
   display: none;
@@ -1808,7 +1809,8 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: var(--color-3rd);
   transition: 0.3s;
 }
 
