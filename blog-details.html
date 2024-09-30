@@ -47,21 +47,27 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="./index.html">Главная</a></li>
-                <li><a href="./index.html#portfolio">Проекты</a></li>
+
+
+                <!--                dropdown-->
+
+                <li class="dropdown"><a href="#"><span>Проекты</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li><a href="./index.html#portfolio">Портфолио</a></li>
+                        <li><a href="./projectexample.html">Пример проектной документации</a></li>
+                    </ul>
+                </li>
+
+                <!--                              end  dropdown-->
+
+
+<!--                <li><a href="./index.html#portfolio">Проекты</a></li>-->
+<!--                <li><a href="./projectexample.html">Пример проекта</a></li>-->
                 <li><a href="./index.html#services">Услуги</a></li>
                 <li><a href="./price.html">Цены</a></li>
                 <li><a href="./index.html#team">О нас</a></li>
-                <!--                dropdown-->
 
-                <!--                <li class="dropdown"><a href="#"><span>Портфолио</span> <i-->
-                <!--                        class="bi bi-chevron-down dropdown-indicator"></i></a>-->
-                <!--                    <ul>-->
-                <!--                        <li><a href="#portfolio">Все проекты</a></li>-->
-                <!--                        <li><a href="project-details.html">Project Details</a></li>-->
-                <!--                    </ul>-->
-                <!--                </li>-->
-
-                <!--              end  dropdown-->
 
                 <li><a href="./index.html#testimonials">Отзывы</a></li>
 
@@ -83,6 +89,9 @@
 
                 <!--              end  dropdown-->
                 <li><a href="#footer">Контакты</a></li>
+
+<!--                КНОПКА заказа-->
+                <li class="backfororder"><a class="linkfororder" href="./index.html#call-to-action">Заказать</a></li>
             </ul>
         </nav><!-- .navbar -->
 

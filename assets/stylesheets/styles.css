@@ -764,7 +764,7 @@ section {
     transition: 0.5s;
     z-index: 9999;
     color: #fff;
-    background: #d7570c;
+    background: var(--color-3rd);
     border-radius: 0 12px;
   }
 
@@ -2406,6 +2406,10 @@ button:focus:not(:focus-visible){
 }
 
 @media (max-width: 767px) {
+  .hero .circle {
+    top: -80px;
+  }
+
   .hero-main-video{
     height: auto;
     min-height: auto;
