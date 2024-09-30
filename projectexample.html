@@ -873,6 +873,64 @@
             </div>
         </div>
     </section>
+    <!-- Start Icon between section -->
+    <div class="divider-icon-bottom">
+        <img src="assets/images/icons/project-divider-icon.svg" alt="">
+    </div>
+    <!-- End Icon between section -->
+    <section id="call-to-action" class="call-to-action sections-bg">
+        <div class="container text-center" data-aos="zoom-out">
+            <div class="section-header text-center-book">
+                <h2>Заказать дизайн</h2>
+                <form class="form__item form" onsubmit="sendEmailTelegram(event)">
+                    <div class="info">
+                        <input class="fname" name="name" placeholder="Имя" required type="text">
+                        <input class="email" name="email" placeholder="Email" required type="text">
+                        <input class="phone" name="phone" placeholder="Телефон" required type="text" value="">
+                        <!--                    <input class="promocode" name="promocode" placeholder="Код на скидку" type="text">-->
+                    </div>
+                    <!— Выбор города —>
+                    <select class="city" id="city" name="city" required="">
+                        <option class="text_city_color" value="" disabled selected>Выберите город</option>
+                        <option class="text_city_color" value="Москва">Москва</option>
+                        <option class="text_city_color" value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option class="text_city_color" value="Калининград">Калининград</option>
+                        <option class="text_city_color" value="Новокузнецк">Новокузнецк</option>
+                        <option class="text_city_color" value="Другой">Другой</option>
+                    </select>
+
+                    <div>
+                    <textarea class="message" name="comment" placeholder=" Дополнительная информация"
+                              rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button class="cta-btn form__submit-button" name="submit" type="submit" value="Оставить заявку">
+                            Заказать дизайн проект
+                        </button>
+                        <a class="cta-btn" href="https://forms.yandex.ru/u/66a269ad02848f0c37a3a0c0/">Рассчитать
+                            стоимость</a>
+                    </div>
+                    <!--                <div class="checkbox_form">-->
+                    <!--                    <input autocomplete="off" id="politics" onclick="check();" type="checkbox" value=""/>-->
+                    <!--                    Нажимая на кнопку "Заказать перевод", я даю <a class="soglasie" href="zasady.html" target="_blank">cогласие-->
+                    <!--                    на обработку персональных данных.</a>-->
+                    <!--                </div>-->
+                    <div class="form_send-result"></div>
+                </form>
+                <!--            <p>Deira Dubai</p>-->
+                <!--            <h3>3:00PM Saturday, 24 June, 2024</h3>-->
+                <!--            <p>With a team of talented designers, we provide personalized interior design services tailored to your-->
+                <!--                specific needs and preferences. From concept to completion, we collaborate closely with you to bring-->
+                <!--                your vision to life. With our expertise in space planning, material selection, and attention to detail,-->
+                <!--                we deliver innovative and functional designs that surpass expectations. Trust us to transform your space-->
+                <!--                into a captivating environment that inspires and delights.</p>-->
+            </div>
+            <!--                <a class="cta-btn" href="#contact">Book Now</a>-->
+        </div>
+    </section><!-- End Call To Action Section -->
+
+
+
 
     <!-- Testimonials Section -->
 <!--    <section id="testimonials" class="testimonials">-->
@@ -1200,9 +1258,9 @@
 <!--    </section>&lt;!&ndash; End Testimonials Section &ndash;&gt;-->
 
     <!-- Start Icon between section -->
-    <div class="divider-icon-bottom">
-        <img src="assets/images/icons/project-divider-icon.svg" alt="">
-    </div>
+<!--    <div class="divider-icon-bottom">-->
+<!--        <img src="assets/images/icons/project-divider-icon.svg" alt="">-->
+<!--    </div>-->
     <!-- End Icon between section -->
 
 </main><!-- End #main -->
@@ -1347,8 +1405,10 @@
 </footer>
 <!-- End Footer -->
 
-<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up"></i></a>
+<a href="./index.html#call-to-action" class="cta-phone d-flex align-items-center justify-content-center">
+    <i class="fa fa-phone"></i></a>
 
 <div id="preloader"></div>
 

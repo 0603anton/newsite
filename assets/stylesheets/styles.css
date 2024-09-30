@@ -279,7 +279,43 @@ section {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 60px;
+  bottom: 70px;
+}
+
+
+/*--------------------------------------------------------------
+# Call to action phone
+--------------------------------------------------------------*/
+.cta-phone {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: var(--color-secondary);
+  width: 44px;
+  height: 44px;
+  border-radius: 0;
+  transition: all 0.4s;
+}
+
+.cta-phone i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.cta-phone:hover {
+  /*background: #d7570c;*/
+  background: var(--color-3rd);
+  color: #fff;
+}
+
+.cta-phone.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -2217,7 +2253,7 @@ button:focus:not(:focus-visible){
   font-size: 4rem;
   /*background: #2b2b2b;*/
   /*opacity: 0.5;*/
-  border-radius: 20px;
+  border-radius: 0 20px 0  20px;
   background-color: rgb(43 43 43 / 0.5);
   /*background-color: rgb(255	255	255 / 0.5);*/
   padding: 0 10px;
@@ -3822,4 +3858,14 @@ select.city {
   .nowraptext{
     white-space: nowrap;
   }
+}
+
+.backfororder{
+  background-color: var(--color-3rd);
+  /*border-radius: 0 20px 0 20px;*/
+}
+
+
+header .navbar ul .backfororder .linkfororder{
+  color: white;
 }

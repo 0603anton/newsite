@@ -152,6 +152,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
+     * Phone button
+     */
+    const ctaPhone = document.querySelector('.cta-phone');
+    if (ctaPhone) {
+        const togglectaPhone = function () {
+            window.scrollY > 100 ? ctaPhone.classList.add('active') : ctaPhone.classList.remove('active');
+        }
+        window.addEventListener('load', togglectaPhone);
+        document.addEventListener('scroll', togglectaPhone);
+        ctaPhone.addEventListener('click', window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        }));
+    }
+
+
+
+
+    /**
      * Clients Slider
      */
     new Swiper('.clients-slider', {
