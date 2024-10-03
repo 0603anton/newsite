@@ -473,7 +473,7 @@ section {
   max-height: 90px;
   min-height: 50px;
   margin: 10px 5px 0 0;
-  background: url('../images/temp/untitled.svg');
+  /*background: url('../images/temp/untitled.svg');*/
   border-radius: 0 17px;
   padding: 8px;
 }
