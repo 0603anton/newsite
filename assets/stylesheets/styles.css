@@ -3749,152 +3749,299 @@ select.city {
   /*object-fit: cover;*/
 }
 
-/*Таблица цен*/
-.pricing-table {
-  background-color:transparent;
-  border-radius: 10px;
-  padding: 0 0 20px 0;
-  /*width: 90%;*/
-  /*max-width: 800px;*/
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  /*align-self: center;*/
-  margin-bottom: 40px;
+/*Таблица цен старая*/
+/*.pricing-table {*/
+/*  background-color:transparent;*/
+/*  border-radius: 10px;*/
+/*  padding: 0 0 20px 0;*/
+/*  !*width: 90%;*!*/
+/*  !*max-width: 800px;*!*/
+/*  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);*/
+/*  !*align-self: center;*!*/
+/*  margin-bottom: 40px;*/
+/*}*/
+
+/*.heading_price {*/
+/*  color: var(--color-3rd);*/
+/*  text-align: center;*/
+/*  font-size: 24px;*/
+/*  margin-bottom: 20px;*/
+/*  !*border-bottom: 1px dashed #fff;*!*/
+/*  padding-bottom: 10px;*/
+/*}*/
+
+/*.pricing-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: 1.5fr 1fr 1fr 1fr;*/
+/*  gap: 20px;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.pricing-grid-2{*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr 1fr 1fr;*/
+/*  gap: 20px;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.header_price {*/
+/*  background-color: var(--color-3rd);*/
+/*  padding: 10px;*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*  text-align: center;*/
+/*  font-size: large;*/
+/*  border-radius: 10px;*/
+/*}*/
+
+/*.row-title {*/
+/*  background-color: var(--color-3rd);*/
+/*  color: white;*/
+/*  padding: 10px;*/
+/*  border-radius: 10px;*/
+/*  font-weight: 500;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.pricing-grid .notincl{*/
+/*  color: var(--color-3rd);*/
+/*  background-color: transparent;*/
+/*}*/
+
+/*.bigatt{*/
+/*  font-weight: bold;*/
+/*  font-size: large;*/
+/*}*/
+
+/*.check, .price {*/
+/*  text-align: center;*/
+/*  padding: 10px;*/
+/*  background-color: transparent;*/
+
+/*}*/
+
+/*.check {*/
+/*  !*background-color: rgba(154, 129, 98, 0.3);*!*/
+/*  background-color: #2b2b2b;*/
+/*  font-size: 18px;*/
+/*  color: var(--color-primary);*/
+/*  border-radius: 10px;*/
+/*}*/
+
+/*.price {*/
+/*  font-weight: bold;*/
+/*  font-size: large;*/
+/*  color: var(--color-3rd);*/
+/*}*/
+
+/*.price:nth-child(3n+1) {*/
+/*  color: var(--color-3rd);*/
+/*}*/
+
+
+/*.steps_heading{*/
+/*  color: #bfbdb3;*/
+/*}*/
+
+/*.steps_main_heading {*/
+/*  color: var(--color-3rd);*/
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*  .pricing-grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: 0.8fr 1fr 1fr 0.8fr;*/
+/*    gap: 5px;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    !*line-height: 12px;*!*/
+/*  }*/
+
+/*  .pricing-grid-2 {*/
+/*    display: grid;*/
+/*    word-break: break-all;*/
+/*    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;*/
+/*    gap: 5px;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    !*line-height: 12px;*!*/
+/*  }*/
+
+
+/*  .bigatt{*/
+/*    font-weight: normal;*/
+/*    font-size: medium;*/
+/*  }*/
+
+/*  .price {*/
+/*    font-weight: normal;*/
+/*    font-size: medium;*/
+/*    color: var(--color-3rd);*/
+/*  }*/
+/*  .nowraptext{*/
+/*    white-space: nowrap;*/
+/*  }*/
+/*}*/
+
+/*.backfororder{*/
+/*  background-color: var(--color-3rd);*/
+/*  !*border-radius: 0 20px 0 20px;*!*/
+/*}*/
+
+
+/*header .navbar ul .backfororder .linkfororder{*/
+/*  color: white;*/
+/*}*/
+
+/*.price_table{*/
+/*  padding-bottom: 20px;*/
+/*}*/
+
+/*ТАБЛИЦА ЦЕН НОВАЯ*/
+.design-pricing-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.heading_price {
-  color: var(--color-3rd);
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-  /*border-bottom: 1px dashed #fff;*/
-  padding-bottom: 10px;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+.design-pricing-table {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  align-items: center;
   justify-content: center;
 }
 
-.pricing-grid-2{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.header_price {
-  background-color: var(--color-3rd);
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: large;
+.design-pricing-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  border: 2px solid var(--color-3rd);
   border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.row-title {
+.design-pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.design-pricing-card-header {
   background-color: var(--color-3rd);
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 500;
   text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-.pricing-grid .notincl{
-  color: var(--color-3rd);
-  background-color: transparent;
-}
-
-.bigatt{
+.design-pricing-card-title {
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: large;
+  margin-bottom: 10px;
 }
 
-.check, .price {
+.design-pricing-card-subtitle {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+}
+
+.design-pricing-price {
   text-align: center;
-  padding: 10px;
-  background-color: transparent;
-
-}
-
-.check {
-  /*background-color: rgba(154, 129, 98, 0.3);*/
-  background-color: #2b2b2b;
-  font-size: 18px;
+  font-size: 1.7em;
+  font-weight: bold;
   color: var(--color-primary);
-  border-radius: 10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--color-3rd);
 }
 
-.price {
+.design-pricing-features {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.design-pricing-features li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--color-3rd);
+  font-size: 0.9em;
+  min-height: 40px;
   font-weight: bold;
-  font-size: large;
-  color: var(--color-3rd);
 }
 
-.price:nth-child(3n+1) {
-  color: var(--color-3rd);
+.design-pricing-features li::before {
+  content: '✓';
+  color: var(--color-primary);
+  margin-right: 10px;
+  font-weight: bold;
 }
 
-
-.steps_heading{
-  color: #bfbdb3;
+.design-pricing-features li.design-pricing-feature-unavailable::before {
+  content: '✗';
+  color: #494949;
 }
 
-.steps_main_heading {
-  color: var(--color-3rd);
+.design-pricing-card .design-pricing-features li.design-pricing-feature-unavailable{
+  color: #494949;
 }
 
-@media screen and (max-width: 768px) {
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr 1fr 0.8fr;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    /*line-height: 12px;*/
-  }
-
-  .pricing-grid-2 {
-    display: grid;
-    word-break: break-all;
-    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    /*line-height: 12px;*/
-  }
-
-
-  .bigatt{
-    font-weight: normal;
-    font-size: medium;
-  }
-
-  .price {
-    font-weight: normal;
-    font-size: medium;
-    color: var(--color-3rd);
-  }
-  .nowraptext{
-    white-space: nowrap;
-  }
+.design-pricing-features li:last-child {
+  border-bottom: none;
 }
 
-.backfororder{
+.design-pricing-details-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
   background-color: var(--color-3rd);
-  /*border-radius: 0 20px 0 20px;*/
-}
-
-
-header .navbar ul .backfororder .linkfororder{
   color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.price_table{
-  padding-bottom: 20px;
+.design-pricing-details-btn:hover {
+  background-color: var(--color-3rd);
+}
+
+.design-pricing-card .design-pricing-features li{
+  color: var(--color-primary);
+}
+
+.unique-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.unique-image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.unique-image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .unique-image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
